@@ -7,10 +7,12 @@ import (
 
 	"net/http"
 
+	"rest-api.com/m/v2/db"
 	"rest-api.com/m/v2/models"
 )
 
 func main() {
+	db.InitDB()
 	fmt.Println("Welcome!")
 	server := gin.Default()
 	server.GET("/events", getEvents)

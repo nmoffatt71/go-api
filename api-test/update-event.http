@@ -1,0 +1,10 @@
+PUT http://localhost:8080/events
+Content-Type: application/json
+
+{
+    "name":"Tigger Moffatt",
+    "description":"admin user",
+    "location":"vacaville",
+    "datetime":"2025-02-02T15:30:00.000Z"
+
+}
